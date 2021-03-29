@@ -2,8 +2,9 @@
   "name": "cups-of-tea",
   "version": "1.0.0",
   "description": "A simple project to practice Docker and JavaScript in the back end (Express) and front end (React.js)",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/KNaiskes/cups-of-tea#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
