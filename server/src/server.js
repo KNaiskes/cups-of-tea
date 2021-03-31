@@ -14,7 +14,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/users/:userId', (req, res) => {
-    res.send(req.params);
+    if (typeof req.params.userId === 'string' || req.params.userId instanceof String) {
+	res.send(req.params);
+    }
+    // else {}
 });
 
 
