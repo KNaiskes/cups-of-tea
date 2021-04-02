@@ -9,6 +9,7 @@ services:
       - '5432:5432'
     volumes:
       - docker-compose-example-db:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
   server:
     build:
